@@ -1,0 +1,16 @@
+CREATE TABLE StudentInfo (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL,
+    Address TEXT,
+    Email VARCHAR(100),
+    Guardian VARCHAR(50),
+    ContactNo VARCHAR(15)
+);
+
+INSERT INTO StudentInfo (FirstName, LastName, DateOfBirth, Address, Email, Guardian, ContactNo)
+VALUES 
+('Juan', 'Dela Cruz', '2000-01-15', '123 Main Street Banate', 'juan@example.com', 'Jane', '1234567890'),
+('Alice', 'Smith', '1995-06-22', '456 Oak Avenue, Metropolis', 'alice.smith@example.com', 'Robert Smith', '+1-9876543210'),
+('Bob', 'Johnson', '1998-03-12', '789 Pine Road, Gotham', 'bob.johnson@example.com', 'Emily Johnson', '9876543210');
